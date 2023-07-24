@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Add product in the cart" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-07-24T02:00:53" hostname="SQAMED-92711" time="42.507">
+  <properties/>
+  <testcase name="Adds a product" classname="Add product in the cart" time="12.357"/>
+  <testcase name="Fill Guest" classname="Add product in the cart" time="24.491"/>
+  <system-out><![CDATA[?[92m|-- Automation opens the http://opencart.abstracta.us/index.php?route=common/home?[0m
+?[92m|-- Given searches the "listA" of product and add to the cart?[0m
+?[92m|---- Automation adds products to the cart.?[0m
+?[92m|------ Automation enters 'MacBook' into Input to search a product.?[0m
+?[92m|------ Automation clicks on Button to search a product.?[0m
+?[92m|------ Automation clicks on Card of add a product to the cart.?[0m
+?[92m|------ Automation enters 'Samsung SyncMaster 941BW' into Input to search a product.?[0m
+?[92m|------ Automation clicks on Button to search a product.?[0m
+?[92m|------ Automation clicks on Card of add a product to the cart.?[0m
+?[92m|-- Then should will see the products with the value in the cart?[0m
+?[92m|---- Then view products?[0m
+?[92m|------ Automation clicks on Href to view cart.?[0m
+?[92m|------ Automation wait?[0m
+?[92m|------ Automation should see a value that contains: <[844.0]>?[0m
+?[92m|-- Automation opens the http://opencart.abstracta.us/index.php?route=common/home?[0m
+?[92m|-- Given searches the "listA" of product and add to the cart?[0m
+?[92m|---- Automation adds products to the cart.?[0m
+?[92m|------ Automation enters 'MacBook' into Input to search a product.?[0m
+?[92m|------ Automation clicks on Button to search a product.?[0m
+?[92m|------ Automation clicks on Card of add a product to the cart.?[0m
+?[92m|------ Automation enters 'Samsung SyncMaster 941BW' into Input to search a product.?[0m
+?[92m|------ Automation clicks on Button to search a product.?[0m
+?[92m|------ Automation clicks on Card of add a product to the cart.?[0m
+?[92m|-- When should will see the products with the value in the cart?[0m
+?[92m|---- Then view products?[0m
+?[92m|------ Automation clicks on Href to view cart.?[0m
+?[92m|------ Automation wait?[0m
+?[92m|------ Automation should see a value that contains: <[844.0]>?[0m
+?[92m|-- When "personA" fills the steps of checkout?[0m
+?[92m|---- Automation fills the form and check the order.?[0m
+?[92m|------ Automation clicks on Button to steps of checkout.?[0m
+?[92m|------ Automation clicks on Radio button to guest.?[0m
+?[92m|------ Automation clicks on Button to contie.?[0m
+?[92m|------ Automation wait?[0m
+?[92m|------ Automation enters 'Pepito' into Input of first name.?[0m
+?[92m|------ Automation enters 'Perez' into Input of last name.?[0m
+?[92m|------ Automation enters 'pepitoperezQA@email.com' into Input of email.?[0m
+?[92m|------ Automation enters '123456789' into Input of telephone.?[0m
+?[92m|------ Automation enters 'Company QA SA' into Input of company.?[0m
+?[92m|------ Automation enters 'avda Qa2 diag 2b' into Input of address1.?[0m
+?[92m|------ Automation enters '45645' into Input of addres2.?[0m
+?[92m|------ Automation enters 'Medellin' into Input of city.?[0m
+?[92m|------ Automation enters '00000' into Input of post code.?[0m
+?[92m|------ Automation selects Colombia on Options of contries.?[0m
+?[92m|------ Automation selects Antioquia on Options os states.?[0m
+?[92m|------ Automation clicks on Button to continue to delivery details.?[0m
+?[92m|------ Automation wait?[0m
+?[92m|------ Automation clicks on Button to continue to confirm order.?[0m
+?[92m|------ Automation wait?[0m
+?[92m|------ Automation clicks on Check button to confirm terms and conditions.?[0m
+?[92m|------ Automation clicks on Butto to continue to paymen method.?[0m
+?[92m|------ Automation wait?[0m
+?[92m|------ Automation clicks on Button to cofirm order.?[0m
+?[92m|-- Then should will see a msg like "Your order has been placed!"?[0m
+?[92m|---- Then your order?[0m
+?[92m|------ Automation wait?[0m
+?[92m|------ Automation should see a value that contains: <[Your order has been placed!]>?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/pcc/Downloads/globant/proyecto/OpenCartProyect/src/test/resources/features/add_list_product.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Adds a product(add-product-in-the-cart;adds-a-product)
+--------------------------------------------------------------------------------
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pcc\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 61681
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jul. 23, 2023 9:00:56 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+jul. 23, 2023 9:00:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: a no-op implementation
+jul. 23, 2023 9:00:56 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 114.
+jul. 23, 2023 9:00:56 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO co.com.globant.opencart.test.utils.ReadFiles - Susscesfull
+[Test worker] INFO co.com.globant.opencart.test.utils.ReadFiles - Susscesfull
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Adds a product
+----------------------------------------------------------------------?[0m
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/pcc/Downloads/globant/proyecto/OpenCartProyect/src/test/resources/features/guest_checkout.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Fill Guest(add-product-in-the-cart;fill-guest)
+--------------------------------------------------------------------------------
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pcc\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 49645
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jul. 23, 2023 9:01:12 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+jul. 23, 2023 9:01:12 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: a no-op implementation
+jul. 23, 2023 9:01:12 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 114.
+jul. 23, 2023 9:01:12 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO co.com.globant.opencart.test.utils.ReadFiles - Susscesfull
+[Test worker] INFO co.com.globant.opencart.test.utils.ReadFiles - Susscesfull
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Fill Guest
+----------------------------------------------------------------------?[0m
+]]></system-err>
+</testsuite>

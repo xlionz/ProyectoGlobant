@@ -1,0 +1,6 @@
+-Se evidencia que la pagina se puede abarcar muchisimo más con escenarios mas completos: tipo agregar un producto al carrito 
+por caracteristicas, ya que hay algunos productos que piden ciertas opciones antes de ser agregados al carrito.
+
+-Puede que sea mi pc un poco más rapido que la página, pero a veces se ponia un poco lenta y los WaitUntill no me lograron servir ya que el html existia pero no el robot no lo podia ver.
+
+-La pagina está muy bien construida, lo que permitió crear lozalizadores resumidos y entendibles incluyendo que se encontraron muy rapidamente.

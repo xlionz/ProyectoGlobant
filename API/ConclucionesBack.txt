@@ -1,0 +1,2 @@
+los servicios de /user (POST) y /user/{userName} (PUT) dejan ingresar elementos númericos en el capo 'firstName'
+dejando el servicio con status 200 OK, cuando debería ser Bad Request.

@@ -1,0 +1,38 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group 'co.com.petstore.integrationTest'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    karateVersion = '1.3.1'
+}
+
+
+dependencies {
+    implementation "com.intuit.karate:karate-core:${karateVersion}"
+    implementation "com.intuit.karate:karate-junit5:${karateVersion}"
+}
+
+test{
+    systemProperty "karate.env", System.getProperty("karate.env")
+    systemProperty "baseUrl", System.getProperty("baseUrl")
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
